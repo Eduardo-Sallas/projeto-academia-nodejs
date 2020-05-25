@@ -1,0 +1,22 @@
+{
+  "name": "academia",
+  "version": "1.0.0",
+  "description": "Backend do Projeto Academia para materia de Programacao Web l",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eduardo-Sallas/projeto-academia-nodejs.git"
+  },
+  "author": "Luan Kenzley, Eduardo Sallas, Vinicius Oliveira, David",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eduardo-Sallas/projeto-academia-nodejs/issues"
+  },
+  "homepage": "https://github.com/Eduardo-Sallas/projeto-academia-nodejs#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
