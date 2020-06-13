@@ -5,7 +5,7 @@ html, body, #home{
 }
 
 body{
-	background: url(../imagens2/fundo2.png);
+	background: url(../imagens/fundo-index.png);
 	background-attachment: fixed;
 	font-family: Helvetica, Arial, sans-serif;
 }
@@ -59,6 +59,15 @@ nav.navbar-transparente{
 	background-color: white;
 	color: black;
 }
+.btn-amarelo{
+	background: #ffc107;
+	color: black;
+}
+.btn-amarelo:hover{
+	background: rgba(235, 231, 9, 0.986);
+	color: black;
+}
+
 
 /*--------tipografia-------*/
 h1 {
@@ -67,6 +76,15 @@ h1 {
 	margin-bottom: 50px;
 	color: #ffc107;
 }
+
+#fundo-vip{
+	background: url(../imagens/fundo-vip.png);
+}
+#fundo-contato{
+	background: url(../imagens/fundo-contatos.jpg);
+}
+
+
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
 	.btn-custom{
@@ -77,6 +95,22 @@ h1 {
 	background: rgba(0,0,0,0.8);
 	padding: 80px;
 	}
+
+	.texto-vip{
+		font-weight: 900;
+		letter-spacing: -0.05em;
+		margin-bottom: 50px;
+		color: #ffc107;
+		font-size: 2.3em;
+	}
+
+	.ul-vip{
+		color: #DFDDDD;
+		font-size: 1.3em;
+		list-style-type: none;
+		
+	}
+
 }
 
 /*  Small devices (landscape phones, 576px and up)*/
@@ -93,6 +127,21 @@ h1 {
 	background: rgba(0,0,0,0.8);
 	padding: 80px;
 	}
+
+	.texto-vip{
+		font-weight: 900;
+		letter-spacing: -0.05em;
+		margin-bottom: 50px;
+		color: #ffc107;
+		font-size: 2.5em;
+	}
+
+	.ul-vip{
+		color: #DFDDDD;
+		font-size: 1.5em;
+		list-style-type: none;
+	}
+
 
 }
 
@@ -111,6 +160,21 @@ h1 {
 	padding: 80px;
 	}
 
+	.texto-vip{
+		font-weight: 900;
+		letter-spacing: -0.05em;
+		margin-bottom: 50px;
+		color: #ffc107;
+		font-size: 3em;
+	}
+
+	.ul-vip{
+		color: #DFDDDD;
+		font-size: 1.5em;
+		list-style-type: none;
+	}
+
+
 }
 
 /*Large devices (desktops, 992px and up)*/
@@ -127,6 +191,21 @@ h1 {
 	background: rgba(0,0,0,0.8);
 	padding: 80px;
 	}
+
+	.texto-vip{
+		font-weight: 900;
+		letter-spacing: -0.05em;
+		margin-bottom: 50px;
+		color: #ffc107;
+		font-size: 3em;
+	}
+
+	.ul-vip{
+		color: #DFDDDD;
+		font-size: 1.5em;
+		list-style-type: none;
+	}
+	
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
@@ -144,7 +223,21 @@ h1 {
 	padding: 80px;
 	}
 
-}
+	.texto-vip{
+		font-weight: 900;
+		letter-spacing: -0.05em;
+		margin-bottom: 50px;
+		color: #ffc107;
+		font-size: 4em;
+	}
 
+	.ul-vip{
+		color: #DFDDDD;
+		font-size: 2em;
+		list-style-type: none;
+	}
+
+
+}
 
 
