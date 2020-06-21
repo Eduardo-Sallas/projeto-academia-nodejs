@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="unidescApp">
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
+        <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" href="./css/estilo.css">
+        <title>Cadastro BodyForm</title>
+        <link rel="icon" href="imagens/logo-editada.png">
+    </head>
+    <body ng-controller="produtoController as vm" ng-init="vm.init()">
+
+         <!-- Cabeçalho-->
+    <div>
+      <header>
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark navbar-transparente">
+          <div class="container">
+            <!-- Logo -->
+            <a href="principal.html" class="navbar-brand">
+              <img src="imagens/logo-editada.png" >
+            </a>
+            <!-- Menu Hamburger -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                <i  class="fas fa-bars text-white"></i>
+            </button>
+            <!-- Navegação -->
+           <div class="collapse navbar-collapse" id="nav-principal">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a href="vip.html" class="nav-link">Vip</a>
+                  </li>
+                    <li class="nav-item">
+                    <a href="" class="nav-link">Ajuda</a>
+                  </li>
+                    <li class="nav-item">
+                    <a href="contatos.html" class="nav-link">Contato</a>
+                  </li>
+  
+                   <li class="nav-item divisor"></li>
+  
+                    <li class="nav-item">
+                    <a href="index.html" class="nav-link">Cadastrar-se</a>
+                  </li>
+                    <li class="nav-item">
+                    <a href="" class="nav-link">Entrar</a>
+                  </li>
+                </ul>
+           </div>
+          </div>
+        </nav>
+      </header> <!-- Fim do cabeçalho -->
+    </div>
+
+
+    
+        <div class="container">
+           
+            <div class="row justify-content-center fundo-opaco-centro" id="centralizando">
+                  
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                  
+                    <button type="submit" class="btn btn-primary ">Entrar</button>
+                   
+                  </form>
+
+                </div>
+                
+
+         
+         
+
+        <script src="./node_modules/angular/angular.min.js"></script>
+        <script src="./app/app.js"></script>
+        <script src="./app/controller.js"></script>
+    </body>
+</html>
