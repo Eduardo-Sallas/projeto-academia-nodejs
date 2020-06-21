@@ -7,9 +7,10 @@
         <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
         <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
         <link rel="stylesheet" href="./css/estilo.css">
-        <title>Minha Aplicação Angular</title>
+        <title>Cadastro BodyForm</title>
+        <link rel="icon" href="imagens/logo-editada.png">
     </head>
-    <body ng-controller="produtoController as vm" ng-init="vm.init{}">
+    <body ng-controller="produtoController as vm" ng-init="vm.init()">
 
          <!-- Cabeçalho-->
     <div>
@@ -56,7 +57,7 @@
     
         <div class="container">
            
-            <div class="row justify-content-center">
+            <div class="row justify-content-center fundo-opaco-centro" id="centralizando">
                   
 
                 <form>
@@ -80,7 +81,7 @@
                     <div class="form-row">
                       <div class="form-group col-md-6">
                         <label for="inputCity">E-mail</label>
-                        <input type="email" class="form-control" id="inputCity" placeholder="Digite seu E-mail" ng-model="vm.cadastro.email">
+                        <input type="email" class="form-control" id="inputCity" placeholder="Digite seu E-mail" ng-model="vm.produto.email">
                       </div>
                       <div class="form-group col-md-4">
                         <label for="inputEstado">Unidade</label>
@@ -95,7 +96,7 @@
                       </div>
                       <div class="form-group col-md-2">
                         <label for="inputCEP">CEP</label>
-                        <input type="text" class="form-control" id="inputCEP" placeholder="Ex: XXXXX-XXX" ng-model="vm.cadastro.cep">
+                        <input type="text" class="form-control" id="inputCEP" placeholder="Ex: XXXXX-XXX" ng-model="vm.produto.cep">
                       </div>
                     </div>
                     <div class="form-group">

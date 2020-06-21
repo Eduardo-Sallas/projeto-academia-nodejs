@@ -17,7 +17,7 @@
         //encapsulando o this
         var vm = this;
 
-        var HOST_HTTP = "htttp://localhost:3000";
+        var HOST_HTTP = "http://localhost:3000";
 
         //inicializando as minhas
         vm.produto = {};
@@ -25,13 +25,12 @@
 
         vm.init = function(){
             vm.listarProdutos();
-
         };
 
         vm.listarProdutos = function(){
-            $http.get(HOST_HTTP + './produtos').then(
+            $http.get(HOST_HTTP + '/produtos').then(
             function(response){
-                vm.produtos = response.data.produtos;
+                vm.produtos = response.data;
                 console.log(response);
              },
              function(err){
@@ -51,6 +50,19 @@
             vm.limparCampos();
 
             console.log(vm.produtos);   
+        };
+
+        vm.salvarProdutoBaseDados = function(){
+            $http.post(HOST_HTTP + '/produtos', vm.produto).then(
+                function(response){
+                    vm.produtos.push(vm.produto);
+                    vm.limparCampos();
+                    console.log(response);
+                 },
+                 function(err){
+                    console.log(err);
+                 }
+                );
         };
 
         vm.limparCampos = function(){
