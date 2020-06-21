@@ -261,6 +261,12 @@ h1 {
 	}
 
 
+	a { text-decoration: none; color: #FFF; }
+	a:visited { text-decoration: none; color: #FFF; }
+	a:hover { text-decoration: none; color: #FFF;}
+	a:focus { text-decoration: none;  color: #FFF;}
+	a:hover, a:active { text-decoration: none; color: #FFF; }
+
 
 
 }
