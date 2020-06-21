@@ -41,7 +41,7 @@
 
         vm.adicionarProduto = function(){
             if(vm.produto.id === undefined){
-                vm.produtos.push(angular.copy(vm.produto));
+                vm.salvarProdutoBaseDados();
             }
             else{
                 vm.atualizarProduto(vm.produto.id);
