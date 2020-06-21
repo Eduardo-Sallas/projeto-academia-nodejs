@@ -55,27 +55,39 @@
 
 
     
-        <div class="container">
-           
-            <div class="row justify-content-center fundo-opaco-centro" id="centralizando">
-                  
-                <form>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                  
-                    <button type="submit" class="btn btn-primary ">Entrar</button>
-                   
-                  </form>
+    <div class="row justify-content-center fundo-opaco-centro">
+        <p class="text-center" style="font-size: 40px; color: #ffc107; margin-bottom: 60px;"><strong>LISTA DE CLIENTES CADASTRADOS</strong></p>
+          <table class="table table-dark">
+            <thead>
+                  <tr>
+                      <th scope="col">Nome</th>
+                      <th scope="col">Endereco</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Cep</th>
 
-                </div>
-                
+                  </tr>
+                </thead>
+              <tbody>
+                  <tr ng-repeat="item in vm.produtos track by $index">
+                      <td>{{item.nome}}</td>
+                      <td>{{item.endereco}}</td>
+                      <td>{{item.email}}</td>
+                      <td>{{item.cep}}</td>
+                      
+                         <td>
+                          <i aria-hidden="true" class="fas fa-trash-alt cursor-pointer" ng-click="vm.deletarProduto($index)"></i>
+                      </td>
+                      <td>
+      
+                          <i aria-hidden="true" class="fas fa-edit cursor-pointer" ng-click="vm.carregarProduto($index)"></i>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+
+  </div>
+
 
          
          

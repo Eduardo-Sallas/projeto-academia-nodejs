@@ -47,7 +47,7 @@
                 vm.atualizarProduto(vm.produto.id);
             }
 
-            vm.limparCampos();
+           
 
             console.log(vm.produtos);   
         };
@@ -73,6 +73,7 @@
             console.log(item);
             vm.produtos.splice(item,1);
         };
+            
             vm.carregarProduto = function(item){
                 vm.produto = angular.copy(vm.produtos[item]);
                 vm.produto.id = item;
