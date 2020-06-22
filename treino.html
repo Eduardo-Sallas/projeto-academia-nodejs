@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="unidescApp">
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
+        <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" href="./css/estilo.css">
+        <title>Bodyform - Treino</title>
+        <link rel="icon" href="imagens/logo-editada.png">
+    </head>
+    <body ng-controller="produtoController as vm" ng-init="vm.init()">
+
+         <!-- Cabeçalho-->
+    <div>
+      <header>
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark navbar-transparente">
+          <div class="container">
+            <!-- Logo -->
+            <a href="principal.html" class="navbar-brand">
+              <img src="imagens/logo-editada.png" >
+            </a>
+            <!-- Menu Hamburger -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                <i  class="fas fa-bars text-white"></i>
+            </button>
+            <!-- Navegação -->
+           <div class="collapse navbar-collapse" id="nav-principal">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a href="vip.html" class="nav-link">Vip</a>
+                  </li>
+                    <li class="nav-item">
+                    <a href="login-adm.html" class="nav-link">Gerencia</a>
+                  </li>
+                    <li class="nav-item">
+                    <a href="contatos.html" class="nav-link">Contato</a>
+                  </li>
+  
+                   <li class="nav-item divisor"></li>
+  
+                    <li class="nav-item">
+                    <a href="index.html" class="nav-link">Cadastrar-se</a>
+                  </li>
+                    <li class="nav-item">
+                    <a href="login.html" class="nav-link">Entrar</a>
+                  </li>
+                </ul>
+           </div>
+          </div>
+        </nav>
+      </header> <!-- Fim do cabeçalho -->
+    </div>
+   
+    <div class="container">
+           
+        <div class="row justify-content-center fundo-opaco-centro" id="centralizando">
+              
+            <div class="form-group col-md-4">
+                <label for="inputEstado">Segunda-Feira</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected>Escolha o músculo</option>
+                  <option>Peito</option>
+                  <option>Costas</option>
+                  <option>Bíceps</option>
+                  <option>Tríceps</option>
+                  <option>Perna</option>
+                  <option>Aeróbico</option>
+                  <option>Ombro</option>
+                  <option>Trapézio</option>
+                </select>
+                <label for="inputEstado">Terça-Feira</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected>Escolha o músculo</option>
+                  <option>Peito</option>
+                  <option>Costas</option>
+                  <option>Bíceps</option>
+                  <option>Tríceps</option>
+                  <option>Perna</option>
+                  <option>Aeróbico</option>
+                  <option>Ombro</option>
+                  <option>Trapézio</option>
+                </select>
+                <label for="inputEstado">Quarta-Feira</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected>Escolha o músculo</option>
+                  <option>Peito</option>
+                  <option>Costas</option>
+                  <option>Bíceps</option>
+                  <option>Tríceps</option>
+                  <option>Perna</option>
+                  <option>Aeróbico</option>
+                  <option>Ombro</option>
+                  <option>Trapézio</option>
+                </select>
+                <label for="inputEstado">Quinta-Feira</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected>Escolha o músculo</option>
+                  <option>Peito</option>
+                  <option>Costas</option>
+                  <option>Bíceps</option>
+                  <option>Tríceps</option>
+                  <option>Perna</option>
+                  <option>Aeróbico</option>
+                  <option>Ombro</option>
+                  <option>Trapézio</option>
+                </select>
+                <label for="inputEstado">Sexta-Feira</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected>Escolha o músculo</option>
+                  <option>Peito</option>
+                  <option>Costas</option>
+                  <option>Bíceps</option>
+                  <option>Tríceps</option>
+                  <option>Perna</option>
+                  <option>Aeróbico</option>
+                  <option>Ombro</option>
+                  <option>Trapézio</option>
+                </select>
+                <label for="inputEstado">Sábado</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected>Escolha o músculo</option>
+                  <option>Peito</option>
+                  <option>Costas</option>
+                  <option>Bíceps</option>
+                  <option>Tríceps</option>
+                  <option>Perna</option>
+                  <option>Aeróbico</option>
+                  <option>Ombro</option>
+                  <option>Trapézio</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputEstado">2°</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected>Escolha o músculo</option>
+                  <option>Peito</option>
+                  <option>Costas</option>
+                  <option>Bíceps</option>
+                  <option>Tríceps</option>
+                  <option>Perna</option>
+                  <option>Aeróbico</option>
+                  <option>Ombro</option>
+                  <option>Trapézio</option>
+                </select>
+                <label for="inputEstado">2°</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected>Escolha o músculo</option>
+                  <option>Peito</option>
+                  <option>Costas</option>
+                  <option>Bíceps</option>
+                  <option>Tríceps</option>
+                  <option>Perna</option>
+                  <option>Aeróbico</option>
+                  <option>Ombro</option>
+                  <option>Trapézio</option>
+                </select>
+                <label for="inputEstado">2°</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected>Escolha o músculo</option>
+                  <option>Peito</option>
+                  <option>Costas</option>
+                  <option>Bíceps</option>
+                  <option>Tríceps</option>
+                  <option>Perna</option>
+                  <option>Aeróbico</option>
+                  <option>Ombro</option>
+                  <option>Trapézio</option>
+                </select>
+                <label for="inputEstado">2°</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected>Escolha o músculo</option>
+                  <option>Peito</option>
+                  <option>Costas</option>
+                  <option>Bíceps</option>
+                  <option>Tríceps</option>
+                  <option>Perna</option>
+                  <option>Aeróbico</option>
+                  <option>Ombro</option>
+                  <option>Trapézio</option>
+                </select>
+                <label for="inputEstado">2°</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected>Escolha o músculo</option>
+                  <option>Peito</option>
+                  <option>Costas</option>
+                  <option>Bíceps</option>
+                  <option>Tríceps</option>
+                  <option>Perna</option>
+                  <option>Aeróbico</option>
+                  <option>Ombro</option>
+                  <option>Trapézio</option>
+                </select>
+                <label for="inputEstado">2°</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected>Escolha o músculo</option>
+                  <option>Peito</option>
+                  <option>Costas</option>
+                  <option>Bíceps</option>
+                  <option>Tríceps</option>
+                  <option>Perna</option>
+                  <option>Aeróbico</option>
+                  <option>Ombro</option>
+                  <option>Trapézio</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-4">
+                <label for="inputEstado">3°</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected>Escolha o músculo</option>
+                  <option>Peito</option>
+                  <option>Costas</option>
+                  <option>Bíceps</option>
+                  <option>Tríceps</option>
+                  <option>Perna</option>
+                  <option>Aeróbico</option>
+                  <option>Ombro</option>
+                  <option>Trapézio</option>
+                </select>
+                <label for="inputEstado">3°</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected>Escolha o músculo</option>
+                  <option>Peito</option>
+                  <option>Costas</option>
+                  <option>Bíceps</option>
+                  <option>Tríceps</option>
+                  <option>Perna</option>
+                  <option>Aeróbico</option>
+                  <option>Ombro</option>
+                  <option>Trapézio</option>
+                </select>
+                <label for="inputEstado">3°</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected>Escolha o músculo</option>
+                  <option>Peito</option>
+                  <option>Costas</option>
+                  <option>Bíceps</option>
+                  <option>Tríceps</option>
+                  <option>Perna</option>
+                  <option>Aeróbico</option>
+                  <option>Ombro</option>
+                  <option>Trapézio</option>
+                </select>
+                <label for="inputEstado">3°</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected>Escolha o músculo</option>
+                  <option>Peito</option>
+                  <option>Costas</option>
+                  <option>Bíceps</option>
+                  <option>Tríceps</option>
+                  <option>Perna</option>
+                  <option>Aeróbico</option>
+                  <option>Ombro</option>
+                  <option>Trapézio</option>
+                </select>
+                <label for="inputEstado">3°</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected>Escolha o músculo</option>
+                  <option>Peito</option>
+                  <option>Costas</option>
+                  <option>Bíceps</option>
+                  <option>Tríceps</option>
+                  <option>Perna</option>
+                  <option>Aeróbico</option>
+                  <option>Ombro</option>
+                  <option>Trapézio</option>
+                </select>
+                <label for="inputEstado">3°</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected>Escolha o músculo</option>
+                  <option>Peito</option>
+                  <option>Costas</option>
+                  <option>Bíceps</option>
+                  <option>Tríceps</option>
+                  <option>Perna</option>
+                  <option>Aeróbico</option>
+                  <option>Ombro</option>
+                  <option>Trapézio</option>
+                </select>
+              </div>

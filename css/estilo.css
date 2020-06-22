@@ -98,8 +98,11 @@ h1 {
 	background-size: cover;
 	background-attachment: fixed;
 }
-
-
+#fundo-treino{
+	background: url(../imagens/fundo-plano-treino.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
