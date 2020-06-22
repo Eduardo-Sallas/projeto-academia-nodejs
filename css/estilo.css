@@ -83,13 +83,13 @@ h1 {
 #fundo-contato{
 	background: url(../imagens/fundo-contatos.jpg);
 }
-#fundo-ladm{
-	background: url(../imagens/fundo-ladm.jpg);
+#fundo-adm{
+	background: url(../imagens/fundo-adm.png);
 	background-size: cover;
 	background-attachment: fixed;
 }
-#fundo-adm{
-	background: url(../imagens/fundo-adm.jpg);
+#fundo-login-adm{
+	background: url(../imagens/fundo-login-adm.png);
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -98,6 +98,8 @@ h1 {
 	background-size: cover;
 	background-attachment: fixed;
 }
+
+
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
