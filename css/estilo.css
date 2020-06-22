@@ -79,6 +79,8 @@ h1 {
 
 #fundo-vip{
 	background: url(../imagens/fundo-vip.png);
+	background-size: cover;
+	background-attachment: fixed;
 }
 #fundo-contato{
 	background: url(../imagens/fundo-contatos.jpg);

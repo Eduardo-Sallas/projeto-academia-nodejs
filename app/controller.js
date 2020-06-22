@@ -47,7 +47,7 @@
                 vm.atualizarProduto(vm.produto.id);
             }
 
-            vm.limparCampos();
+          
 
             console.log(vm.produtos);   
         };
