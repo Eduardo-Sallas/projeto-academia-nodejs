@@ -65,23 +65,23 @@
                     <div class="form-row">
                       <div class="form-group col-md-6">
                         <label for="inputEmail4">Nome completo</label>
-                        <input type="text" class="form-control" id="inputEmail4" placeholder="Digite seu nome" ng-model="vm.produto.nome">
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Digite seu nome" ng-model="vm.produto.nome" required>
                       </div>
                       <div class="form-group col-md-6">
                         <label for="inputPassword4">Senha</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Digite sua senha" ng-model="vm.produto.preco">
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Digite sua senha" ng-model="vm.produto.preco" required>
                       </div>
                     </div>
 
                     <div class="form-group">
                       <label for="inputAddress">Endereço</label>
-                      <input type="text" class="form-control" id="inputAddress" placeholder="Digite seu endereço aqui. Ex: Rua dos Bobos, QI. 30 Apart/casa 96..." ng-model="vm.produto.endereco">
+                      <input type="text" class="form-control" id="inputAddress" placeholder="Digite seu endereço aqui. Ex: Rua dos Bobos, QI. 30 Apart/casa 96..." ng-model="vm.produto.endereco" required>
                     </div>
                   
                     <div class="form-row">
                       <div class="form-group col-md-6">
                         <label for="inputCity">E-mail</label>
-                        <input type="email" class="form-control" id="inputCity" placeholder="Digite seu E-mail" ng-model="vm.produto.email">
+                        <input type="email" class="form-control" id="inputCity" placeholder="Digite seu E-mail" ng-model="vm.produto.email" required>
                       </div>
                       <div class="form-group col-md-4">
                         <label for="inputEstado">Unidade</label>
@@ -134,11 +134,11 @@
                                 <td>{{item.cep}}</td>
                                 
                                    <td>
-                                    <i aria-hidden="true" class="fas fa-trash-alt cursor-pointer" ng-click="vm.deletarProduto($index)"></i>
+                                    <i aria-hidden="true" class="fas fa-trash" ng-click="vm.deletarProdutoBaseDeDados()"></i>
                                 </td>
                                 <td>
                 
-                                    <i aria-hidden="true" class="fas fa-edit cursor-pointer" ng-click="vm.carregarProduto($index)"></i>
+                                    <i aria-hidden="true" class="fas fa-edit" ng-click="vm.carregarProduto(item, $index)"></i>
                                 </td>
                             </tr>
                         </tbody>

@@ -47,7 +47,7 @@
                 vm.atualizarProduto(vm.produto.id);
             }
 
-           
+            vm.limparCampos();
 
             console.log(vm.produtos);   
         };
@@ -68,12 +68,23 @@
         vm.limparCampos = function(){
             vm.produto = {};
         };
+
+        vm.deletarProduto = function () {
+            vm.produtos.splice(vm.produtos.indexOf(vm.produto));
+            vm.deletarProdutoBaseDeDados();
+         };
         
-        vm.deletarProduto = function(item){
-            console.log(item);
-            vm.produtos.splice(item,1);
-        };
-            
+         vm.deletarProdutoBaseDeDados = function () {
+            $http.delete(HOST_HTTP + '/produtos/' + vm.produto.id).then(
+               function (response) {
+                  console.log(response);
+                  vm.produtos.splice(item, 1);
+               },
+               function (err) {
+                  console.log(err);
+               }
+            );
+         };
             vm.carregarProduto = function(item){
                 vm.produto = angular.copy(vm.produtos[item]);
                 vm.produto.id = item;
