@@ -75,7 +75,7 @@
          };
         
          vm.deletarProdutoBaseDeDados = function () {
-            $http.delete(HOST_HTTP + '/produtos/' + vm.produto.id).then(
+            $http.delete(HOST_HTTP + '/produtos', vm.produto.id).then(
                function (response) {
                   console.log(response);
                   vm.produtos.splice(item, 1);
